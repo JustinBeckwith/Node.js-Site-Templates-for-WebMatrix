@@ -21,6 +21,16 @@
       <name>Steven Sanderson</name>
       <uri>http://blog.stevensanderson.com/</uri>
     </author>
+	  <dependency>
+		  <and>
+			  <dependency>
+				  <productId>nodejs</productId>
+			  </dependency>
+			  <dependency>
+				  <productId>iisnode32</productId>
+			  </dependency>
+		  </and>
+	  </dependency>
     <installers>
       <installer>
         <id>1</id>

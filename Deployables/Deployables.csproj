@@ -43,6 +43,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SiteTemplates\NodeJsExpressStarter\manifest.xml" />
+    <Content Include="SiteTemplates\NodeJsExpressStarter\parameters.xml" />
+    <Content Include="SiteTemplates\NodeJsExpressStarter\TemplateFeedEntry.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="SiteTemplates\NodeJsExpressSite\manifest.xml" />
     <Content Include="SiteTemplates\NodeJsExpressSite\parameters.xml" />
     <Content Include="SiteTemplates\NodeJsExpressSite\TemplateFeedEntry.xml" />
@@ -54,6 +59,12 @@
     <None Include="Build.targets">
       <SubType>Designer</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MsBuildTasks\MsBuildTasks.csproj">
+      <Project>{D3772C8F-03D0-41F2-91F9-39F69010F522}</Project>
+      <Name>MsBuildTasks</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

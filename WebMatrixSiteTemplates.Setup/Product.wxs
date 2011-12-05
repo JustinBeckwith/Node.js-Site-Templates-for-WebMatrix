@@ -29,8 +29,9 @@
         <Directory Id="WebMatrixRoot" Name="Microsoft WebMatrix">
           <Directory Id="WebMatrixTemplates" Name="templates">
             <Component Id="ProductComponent" Guid="c3b0f4c3-b303-4663-a299-4b0e46a6fa6e">
-              <File Id="NodeJsZip" Name="NodeJsSite.zip" Source="$(var.Deployables.TargetDir)NodeJsSite.zip" DiskId="1" />
-              <File Id="NodeJsExpressZip" Name="NodeJsExpressSite.zip" Source="$(var.Deployables.TargetDir)NodeJsExpressSite.zip" DiskId="1" />
+              <!--<File Id="NodeJsZip" Name="NodeJsSite.zip" Source="$(var.Deployables.TargetDir)NodeJsSite.zip" DiskId="1" />-->
+              <!--<File Id="NodeJsExpressZip" Name="NodeJsExpressSite.zip" Source="$(var.Deployables.TargetDir)NodeJsExpressSite.zip" DiskId="1" />-->
+				<File Id="NodeJsExpressStarterZip" Name="NodeJsExpressStarter.zip" Source="$(var.Deployables.TargetDir)NodeJsExpressStarter.zip" DiskId="1" />
             </Component>
           </Directory>
         </Directory>
@@ -39,8 +40,9 @@
       <Directory Id="TempFolder">
         <Directory Id="TemplateFeedEntries" Name="TemplateFeedEntries">
           <Component Id="TemplateFeedEntriesComponent" Guid="62AD25F4-C46F-4772-BB5A-797682CB86A0" DiskId="1">
-            <File Id="NodeJsXml" Name="NodeJsSite.xml" Source="$(var.Deployables.TargetDir)NodeJsSite.xml" DiskId="1" />
-            <File Id="NodeJsExpressXml" Name="NodeJsExpressSite.xml" Source="$(var.Deployables.TargetDir)NodeJsExpressSite.xml" DiskId="1" />
+            <!--<File Id="NodeJsXml" Name="NodeJsSite.xml" Source="$(var.Deployables.TargetDir)NodeJsSite.xml" DiskId="1" />-->
+            <!--<File Id="NodeJsExpressXml" Name="NodeJsExpressSite.xml" Source="$(var.Deployables.TargetDir)NodeJsExpressSite.xml" DiskId="1" />-->
+			  <File Id="NodeJsExpressStarterXml" Name="NodeJsExpressStarter.xml" Source="$(var.Deployables.TargetDir)NodeJsExpressStarter.xml" DiskId="1" />
           </Component>
         </Directory>
       </Directory>
